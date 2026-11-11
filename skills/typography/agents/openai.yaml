@@ -1,0 +1,4 @@
+interface:
+  display_name: "Video Typography"
+  short_description: "Author readable video text and captions"
+  default_prompt: "Use $typography to create readable, platform-safe video text."

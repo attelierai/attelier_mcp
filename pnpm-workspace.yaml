@@ -1,0 +1,6 @@
+packages:
+  - 'cli'
+  - 'harness'
+  - 'kit'
+  - 'mcp'
+  - 'motion'

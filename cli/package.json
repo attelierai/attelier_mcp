@@ -1,0 +1,26 @@
+{
+  "name": "attelier",
+  "version": "1.0.4",
+  "private": true,
+  "type": "module",
+  "description": "Deterministic Attelier API client, separate from the Atte agent",
+  "engines": {
+    "node": ">=22"
+  },
+  "bin": {
+    "attelier": "./bin/attelier.mjs"
+  },
+  "exports": {
+    ".": "./src/client.mjs"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "node --check src/client.mjs && node --check bin/attelier.mjs",
+    "typecheck": "node --check src/client.mjs",
+    "test": "node --test test/*.test.mjs"
+  }
+}

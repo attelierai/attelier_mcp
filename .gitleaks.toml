@@ -1,0 +1,9 @@
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Prompt cache identifiers in runtime unit tests are not authentication credentials"
+condition = "AND"
+paths = ['''harness/src/openai-responses-runtime\.test\.ts$''']
+regexTarget = "match"
+regexes = ['''(?:promptCacheKey:|\.prompt_cache_key,)\s*"[^"\n]+"''']

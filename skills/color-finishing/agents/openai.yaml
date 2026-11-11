@@ -1,0 +1,4 @@
+interface:
+  display_name: "Color Finishing"
+  short_description: "Match sources and apply a coherent look"
+  default_prompt: "Use $color-finishing to match clips and finish color coherently."

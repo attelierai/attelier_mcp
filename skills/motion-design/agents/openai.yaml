@@ -1,0 +1,4 @@
+interface:
+  display_name: "Motion Design"
+  short_description: "Author restrained, motivated video motion"
+  default_prompt: "Use $motion-design to add motivated motion without harming composition."

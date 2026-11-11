@@ -1,0 +1,3 @@
+interface:
+  display_name: "Pure Editing"
+  short_description: "Perform precise deterministic video edits"

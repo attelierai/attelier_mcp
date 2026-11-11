@@ -1,0 +1,166 @@
+{
+  "name": "@attelier/agent-harness",
+  "version": "5.2.3",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./dist/index.js"
+    },
+    "./conformance": {
+      "types": "./src/conformance.ts",
+      "default": "./dist/conformance.js"
+    },
+    "./mcp-client": {
+      "types": "./src/mcp-client.ts",
+      "default": "./dist/mcp-client.js"
+    },
+    "./model-router": {
+      "types": "./src/model-router.ts",
+      "default": "./dist/model-router.js"
+    },
+    "./session-projection": {
+      "types": "./src/session-projection.ts",
+      "default": "./dist/session-projection.js"
+    },
+    "./session-json": {
+      "types": "./src/session-json.ts",
+      "default": "./dist/session-json.js"
+    },
+    "./session-runtime": {
+      "types": "./src/session-runtime.ts",
+      "default": "./dist/session-runtime.js"
+    },
+    "./session-command": {
+      "types": "./src/session-command.ts",
+      "default": "./dist/session-command.js"
+    },
+    "./session-store": {
+      "types": "./src/session-store.ts",
+      "default": "./dist/session-store.js"
+    },
+    "./connectors": {
+      "types": "./src/connectors.ts",
+      "default": "./dist/connectors.js"
+    },
+    "./project-tool-compiler": {
+      "types": "./src/project-tool-compiler.ts",
+      "default": "./dist/project-tool-compiler.js"
+    },
+    "./editor-tool-surface": {
+      "types": "./src/editor-tool-surface.ts",
+      "default": "./dist/editor-tool-surface.js"
+    },
+    "./tool-scheduler": {
+      "types": "./src/tool-scheduler.ts",
+      "default": "./dist/tool-scheduler.js"
+    },
+    "./postcondition-verifier": {
+      "types": "./src/postcondition-verifier.ts",
+      "default": "./dist/postcondition-verifier.js"
+    },
+    "./voice-led-timing": {
+      "types": "./src/voice-led-timing.ts",
+      "default": "./dist/voice-led-timing.js"
+    },
+    "./music-workflow": {
+      "types": "./src/music-workflow.ts",
+      "default": "./dist/music-workflow.js"
+    },
+    "./project-critic": {
+      "types": "./src/project-critic.ts",
+      "default": "./dist/project-critic.js"
+    },
+    "./project-transactions": {
+      "types": "./src/project-transactions.ts",
+      "default": "./dist/project-transactions.js"
+    },
+    "./project-transaction-coordinator": {
+      "types": "./src/project-transaction-coordinator.ts",
+      "default": "./dist/project-transaction-coordinator.js"
+    },
+    "./delivery-repair-policy": {
+      "types": "./src/delivery-repair-policy.ts",
+      "default": "./dist/delivery-repair-policy.js"
+    },
+    "./capability-recovery-coordinator": {
+      "types": "./src/capability-recovery-coordinator.ts",
+      "default": "./dist/capability-recovery-coordinator.js"
+    },
+    "./local-planner": {
+      "types": "./src/local-planner.ts",
+      "default": "./dist/local-planner.js"
+    },
+    "./transition-tools": {
+      "types": "./src/transition-tools.ts",
+      "default": "./dist/transition-tools.js"
+    },
+    "./split-edit-tools": {
+      "types": "./src/split-edit-tools.ts",
+      "default": "./dist/split-edit-tools.js"
+    },
+    "./color-match-tools": {
+      "types": "./src/color-match-tools.ts",
+      "default": "./dist/color-match-tools.js"
+    },
+    "./motion-tools": {
+      "types": "./src/motion-tools.ts",
+      "default": "./dist/motion-tools.js"
+    },
+    "./composition-tools": {
+      "types": "./src/composition-tools.ts",
+      "default": "./dist/composition-tools.js"
+    },
+    "./source-edit": {
+      "types": "./src/source-edit.ts",
+      "default": "./dist/source-edit.js"
+    },
+    "./linked-edits": {
+      "types": "./src/linked-edits.ts",
+      "default": "./dist/linked-edits.js"
+    },
+    "./model-defaults": {
+      "types": "./src/model-defaults.ts",
+      "default": "./dist/model-defaults.js"
+    },
+    "./config": {
+      "types": "./src/config.ts",
+      "default": "./dist/config.js"
+    },
+    "./package.json": "./package.json",
+    "./*": {
+      "types": "./src/*.ts",
+      "default": "./dist/*.js"
+    },
+    "./openai-pricing": {
+      "types": "./src/openai-pricing.ts",
+      "default": "./dist/openai-pricing.js"
+    }
+  },
+  "scripts": {
+    "build": "node -e \"require('node:fs').rmSync('dist',{recursive:true,force:true})\" && tsc -p tsconfig.json",
+    "test": "tsx --test src/**/*.test.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@atte/kit": "workspace:*",
+    "@attelier/agent-schema": "1.0.0",
+    "@attelier/capability-schema": "1.3.0",
+    "@attelier/analysis-schema": "1.0.0",
+    "@attelier/project-schema": "1.1.0",
+    "@attelier/workflow-schema": "1.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.1",
+    "tsx": "4.23.15",
+    "typescript": "6.0.3"
+  },
+  "files": [
+    "src",
+    "dist",
+    "skills",
+    "!src/**/*.test.ts",
+    "!dist/**/*.test.*"
+  ]
+}

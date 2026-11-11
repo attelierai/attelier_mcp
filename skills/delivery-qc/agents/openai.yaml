@@ -1,0 +1,4 @@
+interface:
+  display_name: "Delivery QC"
+  short_description: "Validate encoded video delivery outputs"
+  default_prompt: "Use $delivery-qc to validate a rendered output before publication."

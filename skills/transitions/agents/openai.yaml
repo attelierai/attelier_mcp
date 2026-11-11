@@ -1,0 +1,4 @@
+interface:
+  display_name: "Transitions"
+  short_description: "Author motivated transitions with valid handles"
+  default_prompt: "Use $transitions to choose and author a motivated transition."

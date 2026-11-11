@@ -1,0 +1,4 @@
+interface:
+  display_name: "Brand Compliance"
+  short_description: "Protect approved identity, facts and claims"
+  default_prompt: "Use $brand-compliance to verify brand assets and commercial claims."

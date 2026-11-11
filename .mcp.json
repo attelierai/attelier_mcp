@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "atelier": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["mcp/bin/attelier-mcp.js"],
+      "env": {
+        "ATTELIER_API_URL": "https://api.attelier.ai",
+        "ATTELIER_API_TOKEN": "${ATTELIER_API_TOKEN}"
+      }
+    }
+  }
+}

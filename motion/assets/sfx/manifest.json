@@ -1,0 +1,93 @@
+{
+  "source": "ElevenLabs Sound Effects v2 via fal.ai (fal-ai/elevenlabs/sound-effects/v2), generated 2026-09-23",
+  "sounds": [
+    {
+      "id": "ui-click",
+      "use": "cursor click on a button or chip"
+    },
+    {
+      "id": "ui-typing",
+      "use": "typing a prompt (2.5 s, mechanical keys)"
+    },
+    {
+      "id": "ui-check",
+      "use": "checkbox tick, list item done, selection hop"
+    },
+    {
+      "id": "swish",
+      "use": "card swap / slide transition"
+    },
+    {
+      "id": "zoom-whoosh",
+      "use": "camera zoom in or out"
+    },
+    {
+      "id": "shimmer",
+      "use": "result appears, sparkle reveal"
+    },
+    {
+      "id": "sub-drop",
+      "use": "downbeat accent on a big reveal"
+    },
+    {
+      "id": "glitch",
+      "use": "short digital glitch accent"
+    },
+    {
+      "id": "counter-roll",
+      "use": "numbers counting up (2 s)"
+    },
+    {
+      "id": "win-stinger",
+      "use": "winner or record callout"
+    },
+    {
+      "id": "logo-sting",
+      "use": "light brand end card (2.2 s)"
+    },
+    {
+      "id": "whip",
+      "use": "aggressive whip-pan transition"
+    },
+    {
+      "id": "gravel-burst",
+      "use": "motorsport impact, debris hitting camera"
+    },
+    {
+      "id": "car-passby",
+      "use": "engine doppler pass-by (2 s)"
+    },
+    {
+      "id": "boom-hit",
+      "use": "trailer impact with metallic tail"
+    },
+    {
+      "id": "race-ticker",
+      "use": "race clock ticking (2 s)"
+    },
+    {
+      "id": "shutter",
+      "use": "freeze frame / photo snap"
+    },
+    {
+      "id": "engine-riser",
+      "use": "tension riser into a drop (2 s)"
+    },
+    {
+      "id": "logo-sting-dark",
+      "use": "dark premium brand end card (2.2 s)"
+    },
+    {
+      "id": "news-open",
+      "use": "TV news opening theme: synth pulse, brass hits, timpani; 6.5 s (ElevenLabs sound generation API, 2026-09-24)"
+    },
+    {
+      "id": "news-close",
+      "use": "TV news closing sting, brass and synth chord; 3.5 s (ElevenLabs sound generation API, 2026-09-24)"
+    },
+    {
+      "id": "news-transition",
+      "use": "fast whoosh with a digital glitch for news graphics transitions; 1.2 s (ElevenLabs sound generation API, 2026-09-24)"
+    }
+  ]
+}

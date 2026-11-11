@@ -1,0 +1,3 @@
+interface:
+  display_name: "Long to Shorts"
+  short_description: "Create editable shorts from long-form media"

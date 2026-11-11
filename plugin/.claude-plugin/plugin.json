@@ -1,0 +1,9 @@
+{
+  "name": "attelier",
+  "version": "0.1.1",
+  "description": "Make videos with Attelier from Claude Code: generation, motion formats, media analysis, review and delivery to your Attelier Library, with Attelier's taste and your own.",
+  "author": { "name": "Attelier" },
+  "homepage": "https://docs.attelier.ai",
+  "repository": "https://github.com/attelierai/attelier_agent",
+  "keywords": ["video", "generation", "editing", "mcp"]
+}

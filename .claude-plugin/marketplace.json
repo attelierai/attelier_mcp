@@ -1,0 +1,16 @@
+{
+  "name": "attelier",
+  "owner": {
+    "name": "Attelier"
+  },
+  "metadata": {
+    "description": "Attelier's plugin for Claude Code: make videos with Attelier's tools, formats and taste."
+  },
+  "plugins": [
+    {
+      "name": "attelier",
+      "source": "./plugin",
+      "description": "Make videos with Attelier from Claude Code: tools, formats, taste."
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "name": "@atte/kit",
+  "version": "1.8.0",
+  "private": true,
+  "type": "module",
+  "description": "Atte's provider-neutral tools, skills, prompts and policies. No UI, HTTP or storage dependency.",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./dist/index.js"
+    },
+    "./tool-catalog": {
+      "types": "./src/tool-catalog.ts",
+      "default": "./dist/tool-catalog.js"
+    },
+    "./feature-registry": {
+      "types": "./src/feature-registry.ts",
+      "default": "./dist/feature-registry.js"
+    },
+    "./skill-registry": {
+      "types": "./src/skill-registry.ts",
+      "default": "./dist/skill-registry.js"
+    },
+    "./skill-loader": {
+      "types": "./src/skill-loader.ts",
+      "default": "./dist/skill-loader.js"
+    },
+    "./product-skills": {
+      "types": "./src/product-skills.ts",
+      "default": "./dist/product-skills.js"
+    },
+    "./use-case-registry": {
+      "types": "./src/use-case-registry.ts",
+      "default": "./dist/use-case-registry.js"
+    },
+    "./skill-retrieval": {
+      "types": "./src/skill-retrieval.ts",
+      "default": "./dist/skill-retrieval.js"
+    },
+    "./taste": {
+      "types": "./src/taste.ts",
+      "default": "./dist/taste.js"
+    },
+    "./project-tool-policy": {
+      "types": "./src/project-tool-policy.ts",
+      "default": "./dist/project-tool-policy.js"
+    },
+    "./project-tool-utils": {
+      "types": "./src/project-tool-utils.ts",
+      "default": "./dist/project-tool-utils.js"
+    },
+    "./creative-router": {
+      "types": "./src/creative-router.ts",
+      "default": "./dist/creative-router.js"
+    },
+    "./system-prompts": {
+      "types": "./src/system-prompts.ts",
+      "default": "./dist/system-prompts.js"
+    },
+    "./language": {
+      "types": "./src/language.ts",
+      "default": "./dist/language.js"
+    },
+    "./public-tools": {
+      "types": "./src/public-tools.ts",
+      "default": "./dist/public-tools.js"
+    },
+    "./public-boundary": {
+      "types": "./src/public-boundary.ts",
+      "default": "./dist/public-boundary.js"
+    },
+    "./tool-adapters": {
+      "types": "./src/tool-adapters.ts",
+      "default": "./dist/tool-adapters.js"
+    },
+    "./mcp-contract": {
+      "types": "./src/mcp-contract.ts",
+      "default": "./dist/mcp-contract.js"
+    },
+    "./mcp-tool-catalog": {
+      "types": "./src/mcp-tool-catalog.ts",
+      "default": "./dist/mcp-tool-catalog.js"
+    },
+    "./compile-edit-boundary": {
+      "types": "./src/compile-edit-boundary.ts",
+      "default": "./dist/compile-edit-boundary.js"
+    },
+    "./lower-third-presets": {
+      "types": "./src/lower-third-presets.ts",
+      "default": "./dist/lower-third-presets.js"
+    },
+    "./create-styles": {
+      "types": "./src/create-styles.ts",
+      "default": "./dist/create-styles.js"
+    },
+    "./prompt-enhancement": {
+      "types": "./src/prompt-enhancement.ts",
+      "default": "./dist/prompt-enhancement.js"
+    },
+    "./pipeline-tools": "./dist/pipeline-tools.js",
+    "./*": {
+      "types": "./src/*.ts",
+      "default": "./dist/*.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "node -e \"require('node:fs').rmSync('dist',{recursive:true,force:true})\" && node ../scripts/stage-skills.mjs && tsc -p tsconfig.build.json",
+    "test": "tsx --test src/**/*.test.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@attelier/capability-schema": "1.3.0",
+    "@attelier/project-schema": "1.1.0",
+    "@attelier/workflow-schema": "1.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.1",
+    "tsx": "4.23.15",
+    "typescript": "6.0.3"
+  },
+  "files": [
+    "src",
+    "dist",
+    "bin",
+    "skills",
+    "!src/**/*.test.ts",
+    "!dist/**/*.test.*"
+  ]
+}

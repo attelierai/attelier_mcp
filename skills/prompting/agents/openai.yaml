@@ -1,0 +1,4 @@
+interface:
+  display_name: "Prompting"
+  short_description: "Write generation prompts and motion briefs that models follow"
+  default_prompt: "Use $prompting to write the generation prompt or motion brief before quoting."

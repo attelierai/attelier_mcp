@@ -1,0 +1,44 @@
+{
+  "name": "@attelier/motion",
+  "version": "0.5.0",
+  "private": true,
+  "type": "module",
+  "description": "Motion-design toolkit for agents: Remotion formats and components, media and music analysis, rendering and mastering.",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json",
+    "./custom": {
+      "types": "./src/custom.ts",
+      "default": "./dist/custom.js"
+    }
+  },
+  "scripts": {
+    "build": "node -e \"require('node:fs').rmSync('dist',{recursive:true,force:true})\" && tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p remotion/tsconfig.json --noEmit",
+    "test": "tsx --test src/**/*.test.ts"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.527",
+    "@remotion/renderer": "4.0.527",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "remotion": "4.0.527"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.1",
+    "@types/react": "19.3.0",
+    "tsx": "4.23.15",
+    "typescript": "6.0.3"
+  },
+  "files": [
+    "src",
+    "dist",
+    "remotion",
+    "assets",
+    "!src/**/*.test.ts",
+    "!dist/**/*.test.*"
+  ]
+}

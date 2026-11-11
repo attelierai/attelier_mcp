@@ -1,0 +1,48 @@
+node_modules/
+.next/
+.next-*/
+.codex/
+.agents/
+/.prepare-project-http-*/
+dist/
+target/
+coverage/
+__pycache__/
+*.py[cod]
+*.log
+*.tsbuildinfo
+.DS_Store
+# Secrets and environment overrides are never versioned. Only sanitized
+# templates named .env.example are allowed.
+.env
+.env.*
+**/.env
+**/.env.*
+!.env.example
+!**/.env.example
+test-results/
+playwright-report/
+.data/
+packages/project-wasm/.gitignore
+
+# session artifacts
+.claude-shots/
+apps/web-editor/public/review/
+/level0/
+/level0-r2/
+/level1/
+/level2/
+/level2-v2/
+# regenerable benchmark fixture media (see scripts/generate-harness-*-fixtures.sh)
+benchmarks/assets/harness-*/
+/*.png
+/*.jpg
+/*.jpeg
+.playwright-mcp/
+.qa-agent-memory.json
+/*.mp4
+
+.venv/
+
+.releases/
+out/

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Audio Mix"
+  short_description: "Create intelligible role-aware video mixes"
+  default_prompt: "Use $audio-mix to produce an intelligible delivery-ready mix."

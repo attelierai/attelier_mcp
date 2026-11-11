@@ -1,0 +1,4 @@
+interface:
+  display_name: "Edit and Cutting"
+  short_description: "Make intentional timeline and cutting decisions"
+  default_prompt: "Use $edit-cutting to plan and apply a precise editorial cut."

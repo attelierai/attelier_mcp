@@ -1,0 +1,41 @@
+{
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.33.4",
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.1",
+    "typescript": "6.0.3",
+    "tsx": "4.23.15"
+  },
+  "name": "attelier_agent",
+  "scripts": {
+    "build": "pnpm --filter @atte/kit build && pnpm --filter @attelier/agent-harness build && pnpm --filter @attelier/motion build && pnpm --filter attelier-mcp build && pnpm --filter attelier build",
+    "typecheck": "pnpm -r typecheck",
+    "lint": "node --test tests/structure.test.mjs",
+    "test": "pnpm build && pnpm -r test && node --test tests/*.test.mjs",
+    "generate:mcp-docs": "tsx scripts/generate-mcp-docs.ts",
+    "pack:release": "pnpm build && node scripts/pack-release.mjs",
+    "mcp": "node mcp/bin/attelier-mcp.js",
+    "attelier": "node cli/bin/attelier.mjs",
+    "bundle:mcp": "pnpm --filter @atte/kit build && pnpm --filter @attelier/motion build && pnpm --filter attelier-mcp build && node scripts/bundle-mcp.mjs"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp",
+      "unrs-resolver",
+      "@temporalio/core-bridge"
+    ],
+    "overrides": {
+      "@attelier/agent-schema": "file:vendor/attelier-agent-schema-1.0.0.tgz",
+      "@attelier/analysis-schema": "file:vendor/attelier-analysis-schema-1.0.0.tgz",
+      "@attelier/project-schema": "file:vendor/attelier-project-schema-1.1.0.tgz",
+      "@attelier/capability-schema": "file:vendor/attelier-capability-schema-1.3.0.tgz",
+      "@attelier/workflow-schema": "file:vendor/attelier-workflow-schema-1.2.0.tgz"
+    }
+  }
+}

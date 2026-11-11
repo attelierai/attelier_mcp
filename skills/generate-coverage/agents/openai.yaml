@@ -1,0 +1,3 @@
+interface:
+  display_name: "Generate Coverage"
+  short_description: "Create and verify a missing continuity shot"

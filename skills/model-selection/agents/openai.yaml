@@ -1,0 +1,4 @@
+interface:
+  display_name: "Model Selection"
+  short_description: "Pick the Attelier model for each generation job"
+  default_prompt: "Use $model-selection to choose and quote the right model for each shot."

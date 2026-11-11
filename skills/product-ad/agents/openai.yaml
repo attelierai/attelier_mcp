@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product Ad"
+  short_description: "Create benchmarked, editable product ads"
+  default_prompt: "Use $product-ad to create an editable product advertisement from an approved brief."
